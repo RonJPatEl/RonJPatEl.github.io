@@ -1,6 +1,10 @@
 ---
-title: Index Page
+title: Publications
 ---
+
+layout: page
+title: "Publications"
+permalink: /Publications/
 
 # Peer reviewed journal publications
 
