@@ -1,9 +1,0 @@
-name: "my-website"
-output_dir: "."
-navbar:
-  title: "Website Ron Pat-El, under construction"
-  left:
-    - text: "Home"
-      href: index.html
-    - text: "About"
-      href: about.html
