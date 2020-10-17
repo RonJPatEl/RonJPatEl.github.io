@@ -2,41 +2,12 @@
 <head>
 
 <!-- load stylesheets and fonts -->
-<link rel="stylesheet" href="css/bootstrap.css">;
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans" rel="stylesheet">
+<link rel="stylesheet" href="D:/R-projects/CV/css/bootstrap.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto">
 
-<style>
-.jumbotron {
-  background-color: #f4511e; /* Orange */
-  color: #ffffff;
-}
-
-body {
-  font-family: "Noto Sans", sans-serif;
-  line-height: 1.8;
-  background-color: #ececec;
-}
-
-h1, h2, h3 {
-	font-family: 'Fjalla One', sans-serif;
-}
-.margin {margin-top: 30px;}
-
-}
-.navbar {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border: 0;
-  border-radius: 0;
-  margin-bottom: 0;
-  font-size: 12px;
-  letter-spacing: 3px;
-}
-
-.navbar-nav li a:hover {
-  color: #1abc9c !important;
-}
-</style>
+<!--family=Fjalla+One&family=Noto+Sans"</script>-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+<link rel="stylesheet" href="D:/R-projects/CV/css/mystyle.css">
 
 </head>
 
@@ -48,40 +19,122 @@ h1, h2, h3 {
       <li class="active"><a class="nav-link" href="#">HOME </a></li>
       <li class="nav-item"><a class="nav-link" href="#publications">PUBLICATIONS</a></li>
       <li class="nav-item"><a class="nav-link" href="#education">EDUCATION</a></li>
-      <li class="nav-item"><a class="nav-link" href="#employment">EMPLOYMENT HISTORY</a></li>
+      <li class="nav-item"><a class="nav-link" href="#employment">EXPERIENCE</a></li>
     </ul>
 </nav>
 
 <!-- title -->
 <div class="jumbotron text-center">
+  <h1 class="margin">Dr. Ron Pat-El</h1>
+  <p><i>Assistant Professor Methods and Statistics</i></p>
+<!-- Add font awesome icons -->
 
-  <h1 class="margin">Dr. Ron Pat-El <small>online resume</small></h1>
-  <p>Assistant Professor Methods and Statistics</p>
-
+<p>
+    <a href="https://twitter.com/RonJPatEl" class="fab fa-twitter fa-lg"></a>
+    <a href="https://www.linkedin.com/in/ron-pat-el-010b532a/" class="fab fa-linkedin fa-lg"></a>
+    <a href="https://www.researchgate.net/profile/Ron_Pat-El?ev=hdr_xprf" class="fab fa-researchgate fa-lg"></a>
+	<a href="https://gitlab.com/RonJPatEl" class="fab fa-gitlab fa-lg"></a>
+</p>
 </div>
 
 <!-- list of publications -->
-<div id="publications" class="container">
-<h2 class="text-center">PUBLICATIONS</h2>
+<div id="publications" class="container-fluid">
+	<div class="row"> <!-- place one row in container -->
+		<div class="col-sm-4"> <!-- two columns, column one for headers -->
 
-<h3 class="margin"> Peer reviewed Journal Publications </h3>
-<p id="articles"></p>
+			<h2 class="text-center">PUBLICATIONS</h2>
 
-<h3 class="margin"> Books and Book Chapters </h3>
-<p id="books"></p>
+		</div> <!-- close column one -->
 
-<h3 class="margin"> Conference Presentations </h3>
-<p id="presentations"> </p>
+		<div class="col-sm-8 pr-5"> <!-- two columns, column two for content -->
 
-<h3 class="margin"> Professional Publications </h3>
-<p id="magazine"></p>
+			<h3 class="margin"> Peer reviewed Journal Publications </h3>
+			<p id="articles"></p>
 
-</div> 
+			<h3 class="margin"> Books and Book Chapters </h3>
+			<p id="books"></p>
+
+			<h3 class="margin"> Conference Presentations </h3>
+			<p id="presentations"> </p>
+
+			<h3 class="margin"> Professional Publications </h3>
+			<p id="magazine"></p>
+
+		</div> <!-- close div column two -->
+	</div> <!-- close div row -->
+</div> <!-- close div container -->
+
+<!-- EDUCATION -->
+<div id="education" class="container-fluid" style="background-color: white;">
+	<div class="row"> <!-- place one row in container -->
+		<div class="col-sm-4"> <!-- two columns, column one for headers -->
+
+			<h2 class="text-center">EDUCATION</h2>
+
+		</div> <!-- close column one -->
+
+		<div class="col-sm-8 pr-5"> <!-- two columns, column two for content -->
+
+			<ul class="timeline" style = "list-style-type: none;">
+				<li>
+					<p><b>PhD Educational Sciences (Leiden University)
+					<span class="float-right">12 October, 2012</span></b></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+				</li>
+				<li>
+					<p><b>MSc Psychology ((Leiden University)
+					<span class="float-right">21 September, 2006</span></b></p>
+					<p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+				</li>
+				<li>
+					<p><b>VWO (pre-university high school track)
+					<span class="float-right">01 June, 2000</span></b></p>
+					<p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+				</li>
+			</ul>
+		</div> <!-- close div column two -->
+
+	</div> <!-- close div row -->
+
+</div> <!-- close div container -->
+
+<!-- EXPERIENCE -->
+<div id="experience" class="container-fluid">
+	<div class="row"> <!-- place one row in container -->
+		<div class="col-sm-4"> <!-- two columns, column one for headers -->
+
+			<h2 class="text-center">EXPERIENCE</h2>
+
+		</div> <!-- close column one -->
+
+		<div class="col-sm-8 pr-5"> <!-- two columns, column two for content -->
+
+			<ul class="timeline" style = "list-style-type: none;">
+				<li>
+					<p><b>Assistant Professor Methods & Statistics 
+					<span class="float-right">2014 - present</span></b></p>
+					<p>(Open University of the Netherlands, Heerlen) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+				</li>
+				<li>
+					<p><b>Teaching Assistant Statistics 
+					<span class="float-right">2011 - 2013</span></b></p>
+					<p>(Vrije Universiteit, Amsterdam) Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+				</li>
+				<li>
+					<p><b>Teaching Assistant Child and Educational Studies
+					<span class="float-right">2013 - 2014</span></b></p>
+					<p>(Leiden University, Leiden) Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+				</li>
+			</ul>
+
+		</div> <!-- close div column two -->
+	</div> <!-- close div row -->
+</div> <!-- close div container -->
 
 
 <!-- footer -->
 <footer class="container-fluid text-center">
-  <p><small><i>Created by Ron Pat-El, 2020</i></small></p>
+  <p class="text-muted small"><i>Created by Ron Pat-El, 2020</i></p>
 </footer>
 
 <!-- scripts below fetch data from zotero api -->
