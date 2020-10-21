@@ -1,0 +1,74 @@
+{
+  "experience": [
+   {
+      "Start": "2014",
+      "End": "present",
+      "Title": "Assistant Professor Methods & Statistics (UD1)",
+      "Org": "Open University of the Netherlands",
+      "Comment": "Responsible for the coordinating, teaching and leading development of courses in the statistics curriculum and research statistics education."
+    },
+    {
+      "Start": "2014",
+      "End": "2016",
+      "Title": "Assistant Professor Methods & Statistics (UD2)",
+      "Org": "Open University of the Netherlands",
+      "Comment": "Responsible for teaching and assisting in the development of the department's curriculum and researching issues in statistics education."
+    },
+    {
+      "Start": "2013",
+      "End": "2014",
+      "Title": "Lecturer Child Studies and Educational Sciences",
+      "Org": "Leiden University",
+      "Comment": "Responsible for the development of the second year bachelor course 'learning and cognition'. Additional responsibilities included provision of instructionals and lectures. Coordinator for the bachelor-thesis program for the academic PABO (elementary school teacher-students)"
+    },
+	    {
+      "Start": "2013",
+      "End": "2015",
+      "Title": "Statistical consultant",
+      "Org": "Independent",
+      "Comment": "Statistical training and consulting. Examples of current projects include training of thesis supervisors, time series analyses to forecast student admission for primary schools, and thesis and dissertation support."
+    },
+		    {
+      "Start": "2011",
+      "End": "2014",
+      "Title": "Teaching Assistant Stastics",
+      "Org": "Vrije Universiteit, Amsterdam",
+      "Comment": "Teaching bachelor-level statistics. Teaching psychometrics, research designs and multivariate statistics to classes of 20 2nd year bachelor students and Structural Equation Modeling to 3rd year bachelor students of psychology and child studies."
+    },
+		    {
+      "Start": "2012",
+      "End": "2013",
+      "Title": "Thesis supervisor Educational Science",
+      "Org": "Leiden University",
+      "Comment": "Supervision of 20 bachelor-thesis students."
+    },
+		    {
+      "Start": "2012",
+      "End": "2013",
+      "Title": "Teaching Assistant Developmental Psychology",
+      "Org": "Vrije Universiteit, Amsterdam",
+      "Comment": "Lecturing student teachers in the academic teacher education program (academic PABO) developmental psychological theories."
+    },
+		    {
+      "Start": "2011",
+      "End": "2012",
+      "Title": "Teacher Educational science",
+      "Org": "Independent",
+      "Comment": "Lecturer and instructor for masters' courses in research methodology, and first-year courses in Child Studies"
+    },
+		    {
+      "Start": "2006",
+      "End": "2012",
+      "Title": "PhD-candidate Educational Science",
+      "Org": "Leiden University",
+      "Comment": "PhD-researcher at the institute of Education and Child Studies, in the department of Educational Sciences."
+    },
+		    {
+      "Start": "2007",
+      "End": "2008",
+      "Title": "Thesis supervisor Clinical child studies",
+      "Org": "Leiden University",
+      "Comment": "Supervisor of 13 master students in Clinical Child Studies. The subject of the master project was Depression as related to physical health and relational problems"
+    }
+  ]
+}
