@@ -1,0 +1,39 @@
+{
+  "education": [
+   {
+      "Start": "2014",
+      "End": "2016",
+      "Title": "Basiskwalificatie Onderwijs (BKO)",
+      "School": "Open University of the Netherlands",
+      "Comment": ""
+    },
+    {
+      "Start": "2006",
+      "End": "2012",
+      "Title": "Doctorate degree in Educational Science",
+      "School": "Leiden University",
+      "Comment": ""
+    },
+    {
+      "Start": "2000",
+      "End": "2006",
+      "Title": "MSc in Psychology",
+      "School": "Leiden University",
+      "Comment": "Specialisation 1: Research Methods & Statistics; Specialisation 2: Social & Organizational Psychology"
+    },
+	    {
+      "Start": "2000",
+      "End": "1998",
+      "Title": "Pre-university education (VWO)",
+      "School": "College ’t Loo, Voorburg",
+      "Comment": ""
+    },
+		    {
+      "Start": "1998",
+      "End": "1992",
+      "Title": "Senior general secondary education (HAVO)",
+      "School": "College ’t Loo, Voorburg",
+      "Comment": ""
+    }
+  ]
+}

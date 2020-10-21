@@ -1,0 +1,28 @@
+{
+  "grants": [
+    {
+      "Start": 2019,
+      "End": "present",
+      "Title": "Serious Game - Junior Scientist",
+      "Funder": "Kwaliteitsafspraken Open University",
+      "Role": "Principal investigator",
+      "Value": "€152,000"
+    },
+    {
+      "Start": 2020,
+      "End": "present",
+      "Title": "Chatting with the past (Chatten met het verleden)",
+      "Funder": "Leiden Education Innovation (Onderwijsinnovatiesubsidie gemeente Leiden)",
+      "Role": "Co-investigator",
+      "Value": "€20,000"
+    },
+    {
+      "Start": 2021,
+      "End": "present",
+      "Title": "Innovating digital assessment: Effective use of multimedia",
+      "Funder": "Open University: Call for Interdisciplinary Research",
+      "Role": "Co-investigator",
+      "Value": "€38,000"
+    }
+  ]
+}
