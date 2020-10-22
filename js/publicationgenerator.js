@@ -51,7 +51,7 @@ async function getArticles() {
             // <!-- data is er, en doe er nu dingen mee -->
 }
 
-<!-- pull books, book chapters and website-books from zotero -->
+// <!-- pull books, book chapters and website-books from zotero -->
 getBooks();
 
 async function getBooks() {
@@ -81,7 +81,7 @@ getMagazines();
 
 async function getMagazines() {
 
-            <!-- download data en wacht tot het er ook echt is -->
+            // <!-- download data en wacht tot het er ook echt is -->
             let url = 'https://api.zotero.org/users/6167652/publications/items?v=3&format=json&include=bib&linkwrap=1&itemType=magazineArticle&sort=date&style=apa';
             let response = await fetch(url);
 
