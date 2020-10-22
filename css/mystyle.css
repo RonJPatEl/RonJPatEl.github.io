@@ -1,6 +1,6 @@
 .jumbotron {
-  background-color: #545b62;
-  color: #ececec;
+  background-color: #eee7fb;
+  color: #495057;
 }
 
 body {
@@ -24,14 +24,16 @@ h1, h2, h3 {
   margin-bottom: 0;
   font-size: 12px;
   letter-spacing: 3px;
+  font-family: 'Saira Extra Condensed', sans-serif;
 }
 
 .navbar-nav li a:hover {
   color: rgb(255 188 0 / 1) !important;
 }
 
-a.fab {color: rgb(121 121 121 / 1)};
+a.fab {color: #495057};
 
+//* TO-DO: use icons for awards: <i class="fas fa-award"></i>; education: <i class="fas fa-graduation-cap"></i>  *//
 ul.timeline {
     list-style-type: none;
     position: relative;
