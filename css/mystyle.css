@@ -66,7 +66,7 @@ ul.timeline > li:before {
 }
 ul.award > li:before {
     font-family: 'FontAwesome';
-    content: '\\f091'; \* fa-trophy "\f091" fa-graduation-cap"\f19d" *\
+    content: '\\f091';
     background: white;
     display: inline-block;
     position: absolute;
