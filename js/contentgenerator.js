@@ -16,8 +16,8 @@ async function getExperience() {
                        document.getElementById("XP").innerHTML += 
 					        "<li>" + 
 								"<div>" +
-									"<b>" + expjson.experience[i].Title + "<span class='float-right'>" + 
-										expjson.experience[i].Start + " - " + expjson.experience[i].End + "</span></b>" + 
+									"<b>" + expjson.experience[i].Title + "</b><span class='float-right text-danger'>" + 
+										expjson.experience[i].Start + " - " + expjson.experience[i].End + "</span>" + 
 									"<p class='mt-0 mb-1 text-muted'>" + expjson.experience[i].Org + "</p>" + 
 									expjson.experience[i].Comment +
 								"</div>" + 
@@ -49,8 +49,8 @@ async function getEducation() {
                        document.getElementById("EDU").innerHTML += 
 					        "<li>" + 
 								"<div>" +
-									"<b>" + expjson.education[i].Title + "<span class='float-right'>" + 
-										expjson.education[i].Start + " - " + expjson.education[i].End + "</span></b>" + 
+									"<b>" + expjson.education[i].Title + "</b><span class='float-right text-danger'>" + 
+										expjson.education[i].Start + " - " + expjson.education[i].End + "</span>" + 
 									"<p class='mt-0 mb-1 text-muted'>" + expjson.education[i].School + "</p>" + 
 									expjson.education[i].Comment +
 								"</div>" + 
