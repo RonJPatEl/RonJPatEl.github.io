@@ -14,8 +14,6 @@ h1, h2, h3 {
 	margin-top: 30px;
 }
 
-
-}
 .navbar {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -33,7 +31,7 @@ h1, h2, h3 {
 
 a.fab {color: #495057};
 
-//* TO-DO: use icons for awards: <i class="fas fa-award"></i>; education: <i class="fas fa-graduation-cap"></i>  *//
+/* TO-DO: use icons for; education: <i class="fas fa-graduation-cap"></i>  */
 ul.timeline {
     list-style-type: none;
     position: relative;
