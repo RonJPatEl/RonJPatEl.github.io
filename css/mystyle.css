@@ -65,8 +65,11 @@ ul.timeline > li:before {
     z-index: 400;
 }
 ul.award > li:before {
-    font-family: 'FontAwesome';
-    content: '\f091';
+    content: "\f091";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
     background: white;
     display: inline-block;
     position: absolute;
