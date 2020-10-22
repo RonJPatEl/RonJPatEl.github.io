@@ -26,11 +26,15 @@
 			</style>
 			-->
 
+<!-- load javascript files -->
+<script src="js/publicationgenerator.js"></script>
+<script src="js/contentgenerator.js"></script>
 <!-- load personal stylesheets and fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto&family=Amatic+SC">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 <link rel="stylesheet" href="/css/mystyle.css">
+<!-- for grants use € somewhere -->
 
 
 <!-- I like the setup of this website: https://technext.github.io/resume-bootstrap4/ -->
@@ -180,181 +184,6 @@
   <p class="text-muted small"><i>Created by Ron Pat-El, 2020</i></p>
 </footer>
 
-<!-- scripts below fetch data from zotero api -->
-
-<script>
-
-
-getPresentations();
-
-async function getPresentations() {
-
-            <!-- download data en wacht tot het er ook echt is -->
-            let url = 'https://api.zotero.org/users/6167652/publications/items?v=3&format=json&include=bib&linkwrap=1&itemType=Presentation&sort=date&style=apa';
-            let response = await fetch(url);
-
-				if (response.ok) { // if HTTP-status is 200-299
-				  // get the response body (the method explained below)
-				  var pubjson = await response.json();
-			
-            
-					for (i = 0; i < pubjson.length; i++) {            		
-						document.getElementById("presentations").innerHTML += pubjson[i].bib
-					}
-						 
-				} else {
-				  alert("HTTP-Error: " + response.status);
-			}
-            <!-- data is er, en doe er nu dingen mee -->
-}
-
-<!-- pull journal articles and proceedings from zotero -->
-getArticles();
-
-async function getArticles() {
-
-            <!-- download data en wacht tot het er ook echt is -->
-            let uri = 'https://api.zotero.org/users/6167652/publications/items?v=3&format=json&include=bib&linkwrap=1&itemType=journalArticle || conferencePaper&sort=date&style=apa';
-            let url =  encodeURI(uri);   
-            let response = await fetch(url);
-
-				if (response.ok) { // if HTTP-status is 200-299
-				  // get the response body (the method explained below)
-				  var pubjson = await response.json();
-			
-            
-					for (i = 0; i < pubjson.length; i++) {            		
-						document.getElementById("articles").innerHTML += pubjson[i].bib
-					}
-				function updateHaystack(input, needle) {
-                    return input.replace(new RegExp('(^|\\s)(' + needle + ')(\\s|$)','ig'), '$1<b>$2</b>$3');
-                }
-				var markup = document.getElementById('articles').innerHTML;
-                var output = updateHaystack(markup, 'Pat-El');
-                document.getElementById('articles').innerHTML = output;		 
-				} else {
-				  alert("HTTP-Error: " + response.status);
-			}
-            <!-- data is er, en doe er nu dingen mee -->
-}
-
-<!-- pull books, book chapters and website-books from zotero -->
-getBooks();
-
-async function getBooks() {
-
-            <!-- download data en wacht tot het er ook echt is -->
-            let uri = 'https://api.zotero.org/users/6167652/publications/items?v=3&format=json&include=bib&linkwrap=1&itemType=book || thesis || bookSection || webpage&sort=date&style=apa';
-            let url =  encodeURI(uri);   
-            let response = await fetch(url);
-
-				if (response.ok) { // if HTTP-status is 200-299
-				  // get the response body (the method explained below)
-				  var pubjson = await response.json();
-			
-            
-					for (i = 0; i < pubjson.length; i++) {            		
-						document.getElementById("books").innerHTML += pubjson[i].bib
-					}
-						 
-				} else {
-				  alert("HTTP-Error: " + response.status);
-			}
-            <!-- data is er, en doe er nu dingen mee -->
-}
-
-
-getMagazines();
-
-async function getMagazines() {
-
-            <!-- download data en wacht tot het er ook echt is -->
-            let url = 'https://api.zotero.org/users/6167652/publications/items?v=3&format=json&include=bib&linkwrap=1&itemType=magazineArticle&sort=date&style=apa';
-            let response = await fetch(url);
-
-				if (response.ok) { // if HTTP-status is 200-299
-				  // get the response body (the method explained below)
-				  var pubjson = await response.json();
-			
-            
-					for (i = 0; i < pubjson.length; i++) {            		
-						document.getElementById("magazine").innerHTML += pubjson[i].bib
-					}
-						 
-				} else {
-				  alert("HTTP-Error: " + response.status);
-			}
-            <!-- data is er, en doe er nu dingen mee -->
-}
-
-
-
-</script>
-
-
-<script> <!-- EXPERIENCE SECTION: PULL FROM GITHUB JSON -->
-getExperience();
-
-async function getExperience() {
-
-            <!-- download data en wacht tot het er ook echt is -->
-            let url = 'https://raw.githubusercontent.com/RonJPatEl/RonJPatEl.github.io/master/content/experience.json';
-            let response = await fetch(url);
-
-				if (response.ok) { // if HTTP-status is 200-299
-				  // get the response body (the method explained below)
-				  var expjson = await response.json();
-			
-            
-					for (i = 0; i < expjson.experience.length; i++) {
-                       document.getElementById("XP").innerHTML += 
-					        "<li>" + 
-								"<div>" +
-									"<b>" + expjson.experience[i].Title + "<span class='float-right'>" + 
-										expjson.experience[i].Start + " - " + expjson.experience[i].End + "</span></b>" + 
-									"<p class='mt-0 mb-1 text-muted'>" + expjson.experience[i].Org + "</p>" + 
-									expjson.experience[i].Comment +
-								"</div>" + 
-							"</li>";
-                     }
-						 
-				} else {
-				  alert("HTTP-Error: " + response.status);
-			}
-}
-</script> <!-- close Experience-section-script -->
-
-<script> <!-- EDUCATION SECTION: PULL FROM GITHUB JSON -->
-getEducation();
-
-async function getEducation() {
-
-            <!-- download data en wacht tot het er ook echt is -->
-            let url = 'https://raw.githubusercontent.com/RonJPatEl/RonJPatEl.github.io/master/content/education.json';
-            let response = await fetch(url);
-
-				if (response.ok) { // if HTTP-status is 200-299
-				  // get the response body (the method explained below)
-				  var expjson = await response.json();
-			
-            
-					for (i = 0; i < expjson.education.length; i++) {
-                       document.getElementById("EDU").innerHTML += 
-					        "<li>" + 
-								"<div>" +
-									"<b>" + expjson.education[i].Title + "<span class='float-right'>" + 
-										expjson.education[i].Start + " - " + expjson.education[i].End + "</span></b>" + 
-									"<p class='mt-0 mb-1 text-muted'>" + expjson.education[i].School + "</p>" + 
-									expjson.education[i].Comment +
-								"</div>" + 
-							"</li>";
-                     }
-						 
-				} else {
-				  alert("HTTP-Error: " + response.status);
-			}
-}
-</script> <!-- close EDUCATION-section-script -->
 
 </body>
 
