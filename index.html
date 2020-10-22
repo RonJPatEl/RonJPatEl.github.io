@@ -3,14 +3,38 @@
 <head>
 <!-- bootstrap meta for better mobile behavior -->	
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- load stylesheets and fonts -->
-<link rel="stylesheet" href="/css/bootstrap.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto">
 
-<!--family=Fjalla+One&family=Noto+Sans"</script>-->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+			<!-- just for safekeeping: an 8-bit style:
+			<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+			<link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+			<style>
+				  html, body, pre, code, kbd, samp {
+					  font-family: "Press Start 2P";
+				  }
+			</style>
+			-->
+
+<!-- load personal stylesheets and fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto&family=Amatic+SC">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/mystyle.css">
+<link rel="stylesheet" href="D:/R-projects/CV/css/mystyle.css">
 
+
+<!-- I like the setup of this website: https://technext.github.io/resume-bootstrap4/ -->
+<!-- has navbar fixed on the left; content on the right -->
 </head>
 
 <body>
@@ -27,28 +51,113 @@
 
 <!-- title -->
 <div class="jumbotron text-center">
-  <h1 class="margin">Dr. Ron Pat-El</h1>
-  <p><i>Assistant Professor Methods and Statistics</i></p>
-<!-- Add font awesome icons -->
+  <h1 class="margin display-1" style="color: tomato; font-family: Saira Extra Condensed Black 900, sans-serif; margin-bottom: 0em;"><span class="text-dark">DR. RON </span>PAT-EL</h1>
+  <h3 class="text-dark" style="margin-top: 0em; margin-bottom: 1em; font-family: Amatic SC, sans-serif;"><b>Assistant Professor Methods and Statistics</b></h3>
 
-<p>
-    <a href="https://twitter.com/RonJPatEl" class="fab fa-twitter fa-lg"></a>
-    <a href="https://www.linkedin.com/in/ron-pat-el-010b532a/" class="fab fa-linkedin fa-lg"></a>
-    <a href="https://www.researchgate.net/profile/Ron_Pat-El?ev=hdr_xprf" class="fab fa-researchgate fa-lg"></a>
-	<a href="https://gitlab.com/RonJPatEl" class="fab fa-gitlab fa-lg"></a>
-</p>
-</div>
+  <p>   <!-- Add links inside font awesome icons -->
+	<a href="https://twitter.com/RonJPatEl" target="_BLANK">
+	    <span class="fa-stack fa-lg">
+	      <i class="fa fa-circle fa-stack-2x"></i>
+	      <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+	    </span>
+	</a>
+	<a href="https://www.linkedin.com/in/ron-pat-el-010b532a/" target="_BLANK">
+	    <span class="fa-stack fa-lg">
+	      <i class="fa fa-circle fa-stack-2x"></i>
+	      <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+	    </span>
+	</a>
+	<a href="https://www.researchgate.net/profile/Ron_Pat-El?ev=hdr_xprf" target="_BLANK">
+	    <span class="fa-stack fa-lg">
+	      <i class="fa fa-circle fa-stack-2x"></i>
+	      <i class="fab fa-researchgate fa-stack-1x fa-inverse"></i>
+	    </span>
+	</a>	
+	<a href="https://gitlab.com/RonJPatEl" target="_BLANK">
+	    <span class="fa-stack fa-lg">
+	      <i class="fa fa-circle fa-stack-2x"></i>
+	      <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+	    </span>
+	</a>
+	<a href="https://orcid.org/0000-0002-4742-0163" target="_BLANK">
+	    <span class="fa-stack fa-lg">
+	      <i class="fa fa-circle fa-stack-2x"></i>
+	      <i class="fab fa-orcid fa-stack-1x fa-inverse"></i>
+	    </span>
+	</a>	
+  </p>
+</div> <!-- close jumbotron -->
+
+<!-- EDUCATION -->
+<div id="education" class="container-fluid" style="background-color: white;">
+	<div class="row"> <!-- place one row in container -->
+
+		<div class="col-md-3"> <!-- two columns, column one for headers -->
+			<h2 class="text-center">EDUCATION</h2>
+		</div> <!-- close column one -->
+
+		<div class="col-md-9 pr-5"> <!-- two columns, column two for content -->
+
+			<ul class="timeline" id = "EDU" style = "list-style-type: none;">
+				<!-- Experience content is generated here -->
+			</ul>
+			
+		</div> <!-- close div column two -->
+	</div> <!-- close div row -->
+</div> <!-- close div container -->
+
+<!-- EXPERIENCE -->
+<div id="experience" class="container-fluid">
+	<div class="row"> <!-- place one row in container -->
+		<div class="col-md-3"> <!-- two columns, column one for headers -->
+
+			<h2 class="text-center">EXPERIENCE</h2>
+
+		</div> <!-- close column one -->
+
+		<div class="col-md-9 pr-5"> <!-- two columns, column two for content -->
+
+			<ul class="timeline" id="XP" style = "list-style-type: none;">
+				<!-- Experience content is generated here -->
+			</ul>
+
+		</div> <!-- close div column two -->
+	</div> <!-- close div row -->
+</div> <!-- close div container -->
+
+
+<!-- Awards and distinctions -->
+<div id="awards" class="container-fluid">
+	<div class="row"> <!-- place one row in container -->
+		<div class="col-md-3"> <!-- two columns, column one for headers -->
+
+			<h2 class="text-center">Awards and Dinstinctions</h2>
+
+		</div> <!-- close column one -->
+
+		<div class="col-md-9 pr-5"> <!-- two columns, column two for content -->
+
+			<ul class="timeline" id="awards" style = "list-style-type: none;">
+				<!-- Experience content is generated here -->
+				<!-- placeholder -->
+				<li> <i class="fas fa-award"></i> Best Faculty Teacher 2018 </li>
+			</ul>
+
+		</div> <!-- close div column two -->
+	</div> <!-- close div row -->
+</div> <!-- close div container -->
+
 
 <!-- list of publications -->
 <div id="publications" class="container-fluid">
 	<div class="row"> <!-- place one row in container -->
-		<div class="col-sm-4"> <!-- two columns, column one for headers -->
+		<div class="col-md-3"> <!-- two columns, column one for headers -->
 
 			<h2 class="text-center">PUBLICATIONS</h2>
 
 		</div> <!-- close column one -->
 
-		<div class="col-sm-8 pr-5"> <!-- two columns, column two for content -->
+		<div class="col-md-9 pr-5"> <!-- two columns, column two for content -->
 
 			<h3 class="margin"> Peer reviewed Journal Publications </h3>
 			<p id="articles"></p>
@@ -66,74 +175,6 @@
 	</div> <!-- close div row -->
 </div> <!-- close div container -->
 
-<!-- EDUCATION -->
-<div id="education" class="container-fluid" style="background-color: white;">
-	<div class="row"> <!-- place one row in container -->
-		<div class="col-sm-4"> <!-- two columns, column one for headers -->
-
-			<h2 class="text-center">EDUCATION</h2>
-
-		</div> <!-- close column one -->
-
-		<div class="col-sm-8 pr-5"> <!-- two columns, column two for content -->
-
-			<ul class="timeline" style = "list-style-type: none;">
-				<li>
-					<p><b>PhD Educational Sciences (Leiden University)
-					<span class="float-right">12 October, 2012</span></b></p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
-				</li>
-				<li>
-					<p><b>MSc Psychology ((Leiden University)
-					<span class="float-right">21 September, 2006</span></b></p>
-					<p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
-				</li>
-				<li>
-					<p><b>VWO (pre-university high school track)
-					<span class="float-right">01 June, 2000</span></b></p>
-					<p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
-				</li>
-			</ul>
-		</div> <!-- close div column two -->
-
-	</div> <!-- close div row -->
-
-</div> <!-- close div container -->
-
-<!-- EXPERIENCE -->
-<div id="experience" class="container-fluid">
-	<div class="row"> <!-- place one row in container -->
-		<div class="col-sm-4"> <!-- two columns, column one for headers -->
-
-			<h2 class="text-center">EXPERIENCE</h2>
-
-		</div> <!-- close column one -->
-
-		<div class="col-sm-8 pr-5"> <!-- two columns, column two for content -->
-
-			<ul class="timeline" style = "list-style-type: none;">
-				<li>
-					<p><b>Assistant Professor Methods & Statistics 
-					<span class="float-right">2014 - present</span></b></p>
-					<p>(Open University of the Netherlands, Heerlen) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
-				</li>
-				<li>
-					<p><b>Teaching Assistant Statistics 
-					<span class="float-right">2011 - 2013</span></b></p>
-					<p>(Vrije Universiteit, Amsterdam) Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
-				</li>
-				<li>
-					<p><b>Teaching Assistant Child and Educational Studies
-					<span class="float-right">2013 - 2014</span></b></p>
-					<p>(Leiden University, Leiden) Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
-				</li>
-			</ul>
-
-		</div> <!-- close div column two -->
-	</div> <!-- close div row -->
-</div> <!-- close div container -->
-
-
 <!-- footer -->
 <footer class="container-fluid text-center">
   <p class="text-muted small"><i>Created by Ron Pat-El, 2020</i></p>
@@ -149,7 +190,7 @@ getPresentations();
 async function getPresentations() {
 
             <!-- download data en wacht tot het er ook echt is -->
-            let url = 'https://api.zotero.org/users/6167652/publications/items?v=3&format=json&include=bib&itemType=Presentation&sort=date&style=apa';
+            let url = 'https://api.zotero.org/users/6167652/publications/items?v=3&format=json&include=bib&linkwrap=1&itemType=Presentation&sort=date&style=apa';
             let response = await fetch(url);
 
 				if (response.ok) { // if HTTP-status is 200-299
@@ -173,7 +214,7 @@ getArticles();
 async function getArticles() {
 
             <!-- download data en wacht tot het er ook echt is -->
-            let uri = 'https://api.zotero.org/users/6167652/publications/items?v=3&format=json&include=bib&itemType=journalArticle || conferencePaper&sort=date&style=apa';
+            let uri = 'https://api.zotero.org/users/6167652/publications/items?v=3&format=json&include=bib&linkwrap=1&itemType=journalArticle || conferencePaper&sort=date&style=apa';
             let url =  encodeURI(uri);   
             let response = await fetch(url);
 
@@ -185,7 +226,12 @@ async function getArticles() {
 					for (i = 0; i < pubjson.length; i++) {            		
 						document.getElementById("articles").innerHTML += pubjson[i].bib
 					}
-						 
+				function updateHaystack(input, needle) {
+                    return input.replace(new RegExp('(^|\\s)(' + needle + ')(\\s|$)','ig'), '$1<b>$2</b>$3');
+                }
+				var markup = document.getElementById('articles').innerHTML;
+                var output = updateHaystack(markup, 'Pat-El');
+                document.getElementById('articles').innerHTML = output;		 
 				} else {
 				  alert("HTTP-Error: " + response.status);
 			}
@@ -198,7 +244,7 @@ getBooks();
 async function getBooks() {
 
             <!-- download data en wacht tot het er ook echt is -->
-            let uri = 'https://api.zotero.org/users/6167652/publications/items?v=3&format=json&include=bib&itemType=book || thesis || bookSection || webpage&sort=date&style=apa';
+            let uri = 'https://api.zotero.org/users/6167652/publications/items?v=3&format=json&include=bib&linkwrap=1&itemType=book || thesis || bookSection || webpage&sort=date&style=apa';
             let url =  encodeURI(uri);   
             let response = await fetch(url);
 
@@ -223,7 +269,7 @@ getMagazines();
 async function getMagazines() {
 
             <!-- download data en wacht tot het er ook echt is -->
-            let url = 'https://api.zotero.org/users/6167652/publications/items?v=3&format=json&include=bib&itemType=magazineArticle&sort=date&style=apa';
+            let url = 'https://api.zotero.org/users/6167652/publications/items?v=3&format=json&include=bib&linkwrap=1&itemType=magazineArticle&sort=date&style=apa';
             let response = await fetch(url);
 
 				if (response.ok) { // if HTTP-status is 200-299
@@ -240,7 +286,75 @@ async function getMagazines() {
 			}
             <!-- data is er, en doe er nu dingen mee -->
 }
+
+
+
 </script>
+
+
+<script> <!-- EXPERIENCE SECTION: PULL FROM GITHUB JSON -->
+getExperience();
+
+async function getExperience() {
+
+            <!-- download data en wacht tot het er ook echt is -->
+            let url = 'https://raw.githubusercontent.com/RonJPatEl/RonJPatEl.github.io/master/content/experience.json';
+            let response = await fetch(url);
+
+				if (response.ok) { // if HTTP-status is 200-299
+				  // get the response body (the method explained below)
+				  var expjson = await response.json();
+			
+            
+					for (i = 0; i < expjson.experience.length; i++) {
+                       document.getElementById("XP").innerHTML += 
+					        "<li>" + 
+								"<div>" +
+									"<b>" + expjson.experience[i].Title + "<span class='float-right'>" + 
+										expjson.experience[i].Start + " - " + expjson.experience[i].End + "</span></b>" + 
+									"<p class='mt-0 mb-1 text-muted'>" + expjson.experience[i].Org + "</p>" + 
+									expjson.experience[i].Comment +
+								"</div>" + 
+							"</li>";
+                     }
+						 
+				} else {
+				  alert("HTTP-Error: " + response.status);
+			}
+}
+</script> <!-- close Experience-section-script -->
+
+<script> <!-- EDUCATION SECTION: PULL FROM GITHUB JSON -->
+getEducation();
+
+async function getEducation() {
+
+            <!-- download data en wacht tot het er ook echt is -->
+            let url = 'https://raw.githubusercontent.com/RonJPatEl/RonJPatEl.github.io/master/content/education.json';
+            let response = await fetch(url);
+
+				if (response.ok) { // if HTTP-status is 200-299
+				  // get the response body (the method explained below)
+				  var expjson = await response.json();
+			
+            
+					for (i = 0; i < expjson.education.length; i++) {
+                       document.getElementById("EDU").innerHTML += 
+					        "<li>" + 
+								"<div>" +
+									"<b>" + expjson.education[i].Title + "<span class='float-right'>" + 
+										expjson.education[i].Start + " - " + expjson.education[i].End + "</span></b>" + 
+									"<p class='mt-0 mb-1 text-muted'>" + expjson.education[i].School + "</p>" + 
+									expjson.education[i].Comment +
+								"</div>" + 
+							"</li>";
+                     }
+						 
+				} else {
+				  alert("HTTP-Error: " + response.status);
+			}
+}
+</script> <!-- close EDUCATION-section-script -->
 
 </body>
 
