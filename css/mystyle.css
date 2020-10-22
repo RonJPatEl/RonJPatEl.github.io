@@ -64,6 +64,19 @@ ul.timeline > li:before {
     height: 20px;
     z-index: 400;
 }
+
+ul.award {
+  margin-top: 30px;
+  list-style-type: none;
+  position: relative;
+}
+
+
+ul.award > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
 ul.award > li:before {
     content: "\f091";
     font-family: "Font Awesome 5 Free";
@@ -74,4 +87,8 @@ ul.award > li:before {
     text-rendering: auto;
    -webkit-font-smoothing: antialiased;
     z-index: 400;
+    position: absolute;
+    left: 10px;
+    color: orange;
 }
+
