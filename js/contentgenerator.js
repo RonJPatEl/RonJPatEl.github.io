@@ -62,3 +62,37 @@ async function getEducation() {
 			}
 }
 // <!-- close EDUCATION-section-script -->
+
+
+// <!-- AWARDS SECTION: PULL FROM GITHUB JSON -->
+
+getAwards();
+
+async function getAwards() {
+
+            // <!-- download data en wacht tot het er ook echt is -->
+            let url = 'https://raw.githubusercontent.com/RonJPatEl/RonJPatEl.github.io/master/content/awards.json';
+            let response = await fetch(url);
+
+				if (response.ok) { // if HTTP-status is 200-299
+				  // get the response body (the method explained below)
+				  var awardjson = await response.json();
+			
+            
+					for (i = 0; i < awardjson.awards.length; i++) {
+                       document.getElementById("AWARD").innerHTML += 
+					        "<li>" + 
+								"<div>" +
+									"<b>" + awardjson.awards[i].Title + "</b><span class='float-right text-danger'>" + 
+									awardjson.awards[i].Start + "</span>" + 
+									"<p class='mt-0 mb-1 text-muted'>" + awardjson.awards[i].Org + "</p>" + 
+									awardjson.awards[i].url +
+								"</div>" + 
+							"</li>";
+                     }
+						 
+				} else {
+				  alert("HTTP-Error: " + response.status);
+			}
+}
+// <!-- close AWARDS-section-script -->
