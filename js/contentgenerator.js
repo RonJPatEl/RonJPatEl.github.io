@@ -96,3 +96,39 @@ async function getAwards() {
 			}
 }
 // <!-- close AWARDS-section-script -->
+
+// <!-- GRANTS SECTION: PULL FROM GITHUB JSON -->
+
+getGrants();
+
+async function getGrants() {
+
+            // <!-- download data en wacht tot het er ook echt is -->
+            let url = 'https://raw.githubusercontent.com/RonJPatEl/RonJPatEl.github.io/master/content/grants.json';
+            let response = await fetch(url);
+
+				if (response.ok) { // if HTTP-status is 200-299
+				  // get the response body (the method explained below)
+				  var grantjson = await response.json();
+			
+            
+					for (i = 0; i < grantjson.grants.length; i++) {
+                       document.getElementById("GRANT").innerHTML += 
+					        "<li>" + 
+								"<div>" +
+									"<b>" + grantjson.grants[i].Title + " (Role: " + grantjson.grants[i].Role + ")" +
+									"</b><span class='float-right text-danger'>" + 
+									grantjson.grants[i].Start + "-" + grantjson.grants[i].End + "</span>" + 
+									"<p class='mt-0 mb-1 text-muted'> &euro;" + grantjson.grants[i].Value + ",- </p>" +
+									"<p class='mt-0 mb-1'> Funding source: " + grantjson.grants[i].Funder + "</p>" +
+									"<a href = '" + grantjson.grants[i].url + "'>" + 
+									"<span class='label label-info'> click link for more info</span>" +   
+								"</div>" + 
+							"</li>";
+                     }
+						 
+				} else {
+				  alert("HTTP-Error: " + response.status);
+			}
+}
+// <!-- close GRANTS-section-script -->
