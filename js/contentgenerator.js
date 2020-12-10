@@ -119,14 +119,21 @@ async function getGrants() {
 									"<b>" + grantjson.grants[i].Title + " (Role: " + grantjson.grants[i].Role + ")" +
 									"</b><span class='float-right text-danger'>" + 
 									grantjson.grants[i].Start + "-" + grantjson.grants[i].End + "</span>" + 
-									"<p class='mt-0 mb-1 text-muted'> &euro;" + grantjson.grants[i].Value + ",- </p>" +
+									"<p class='mt-0 mb-1 text-muted'> &euro;" + grantjson.grants[i].Value.toLocaleString() + ",- </p>" +
 									"<p class='mt-0 mb-1'> Funding source: " + grantjson.grants[i].Funder + "</p>" +
 									"<a href = '" + grantjson.grants[i].url + "'>" + 
 									"<span class='label label-info'> click link for more info</span>" +   
 								"</div>" + 
 							"</li>";
-                     }
-						 
+					}
+						
+					total = 0
+					for (i = 0; i < grantjson.grants.length; i++) {
+						total += grantjson.grants[i].Value;
+					}
+					document.getElementById("munnies").innerHTML = "&euro;" + 
+					total.toLocaleString()
+							
 				} else {
 				  alert("HTTP-Error: " + response.status);
 			}
