@@ -8,13 +8,14 @@ async function getPresentations() {
 
 				if (response.ok) { // if HTTP-status is 200-299
 				  // get the response body (the method explained below)
-				  var pubjson = await response.json();
+				  var prespubjson = await response.json();
 			
             
-					for (i = 0; i < pubjson.length; i++) {            		
-						document.getElementById("presentations").innerHTML += pubjson[i].bib
+					for (i = 0; i < prespubjson.length; i++) {            		
+						document.getElementById("presentations").innerHTML += prespubjson[i].bib
 					}
-						 
+				
+					document.getElementById("totalpresentations").innerHTML += prespubjson.length
 				} else {
 				  alert("HTTP-Error: " + response.status);
 			}
@@ -33,11 +34,11 @@ async function getArticles() {
 
 				if (response.ok) { // if HTTP-status is 200-299
 				  // get the response body (the method explained below)
-				  var pubjson = await response.json();
+				  var artpubjson = await response.json();
 			
             
-					for (i = 0; i < pubjson.length; i++) {            		
-						document.getElementById("articles").innerHTML += pubjson[i].bib
+					for (i = 0; i < artpubjson.length; i++) {            		
+						document.getElementById("articles").innerHTML += artpubjson[i].bib
 					}
 				function updateHaystack(input, needle) {
                     return input.replace(new RegExp('(^|\\s)(' + needle + ')(\\s|$)','ig'), '$1<b>$2</b>$3');
@@ -45,7 +46,10 @@ async function getArticles() {
 				var markup = document.getElementById('articles').innerHTML;
                 var output = updateHaystack(markup, 'Pat-El');
                 document.getElementById('articles').innerHTML = output;		 
-				} else {
+			
+				document.getElementById("totalarticles").innerHTML += artpubjson.length
+			
+			} else {
 				  alert("HTTP-Error: " + response.status);
 			}
             // <!-- data is er, en doe er nu dingen mee -->
@@ -63,13 +67,15 @@ async function getBooks() {
 
 				if (response.ok) { // if HTTP-status is 200-299
 				  // get the response body (the method explained below)
-				  var pubjson = await response.json();
+				  var bookpubjson = await response.json();
 			
             
-					for (i = 0; i < pubjson.length; i++) {            		
-						document.getElementById("books").innerHTML += pubjson[i].bib
+					for (i = 0; i < bookpubjson.length; i++) {            		
+						document.getElementById("books").innerHTML += bookpubjson[i].bib
 					}
-						 
+				
+				document.getElementById("totalbooks").innerHTML += bookpubjson.length
+
 				} else {
 				  alert("HTTP-Error: " + response.status);
 			}
@@ -87,13 +93,15 @@ async function getMagazines() {
 
 				if (response.ok) { // if HTTP-status is 200-299
 				  // get the response body (the method explained below)
-				  var pubjson = await response.json();
+				  var magpubjson = await response.json();
 			
             
-					for (i = 0; i < pubjson.length; i++) {            		
-						document.getElementById("magazine").innerHTML += pubjson[i].bib
+					for (i = 0; i < magpubjson.length; i++) {            		
+						document.getElementById("magazine").innerHTML += magpubjson[i].bib
 					}
-						 
+				
+				document.getElementById("totalmags").innerHTML += magpubjson.length		 
+				
 				} else {
 				  alert("HTTP-Error: " + response.status);
 			}
