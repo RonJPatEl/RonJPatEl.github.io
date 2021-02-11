@@ -6,6 +6,25 @@ My online resume. Feel free to adapt and use for your own website. Publications 
 
 https://theprofessorisin.com/2016/08/19/dr-karens-rules-of-the-academic-cv/
 
+
+I'm considering adding a 'roadmap' to associate professor, based on the admission criteria of my university, and how far I am in meeting them:
+
+Criterium                                          |	gehaald? |
+:--------------------------------------------------|:-----------:|
+UD1	                                               | ja          |
+promovendi                                         | ja          |
+AiO-subsidie                                       | ja          |
+één publicatie per jaar (first/second/last author) | ja          |
+management	                                       | ja          |
+promovendi klaar                                   | nee         |
+promovendi publicaties                             | nee         |
+twee publicaties per jaar, 50% first/second/last   | nee         |
+totaal minimaal 20 publicaties                     | nee         |
+Erkende internationale expertise*                  | nee         |
+
+
+, blijkend uit functies in internationale organisaties of wetenschappelijke tijdschriften, keynotes, of een hoge citatiescore	nee
+
 II.  Content:
 
 1. Education. *done*
