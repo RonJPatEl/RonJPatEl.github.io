@@ -9,9 +9,9 @@ https://theprofessorisin.com/2016/08/19/dr-karens-rules-of-the-academic-cv/
 
 I'm considering adding a 'roadmap' to associate professor, based on the admission criteria of my university, and how far I am in meeting them:
 
-Criterium                                          |	gehaald? |
+Criterium                                          |	done?      |
 :--------------------------------------------------|:-----------:|
-UD1	                                               | ja          |
+UD1	                                             | ja          |
 promovendi                                         | ja          |
 AiO-subsidie                                       | ja          |
 één publicatie per jaar (first/second/last author) | ja          |
@@ -23,7 +23,11 @@ totaal minimaal 20 publicaties                     | nee         |
 Erkende internationale expertise*                  | nee         |
 
 
-, blijkend uit functies in internationale organisaties of wetenschappelijke tijdschriften, keynotes, of een hoge citatiescore	nee
+## move publications to their own page with yearly timeline?
+
+I'm thinking of moving my list of publications to their own page. There it might be easier to have a clear seperation of publications per year.
+E.g: https://codepen.io/mathiesjanssen/pen/ggeBKm
+
 
 II.  Content:
 
