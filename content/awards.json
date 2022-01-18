@@ -1,6 +1,14 @@
 {
     "awards": [
-     {
+      {
+        "Start": "2021",
+        "End": "",
+        "Title": "Faculty Award for Excellence in Teaching 2021 (Facultair Docent van het Jaar 2021)",
+        "Org": "Open University of the Netherlands",
+        "Comment": "",
+        "url": ""
+      },
+      {
         "Start": "2020",
         "End": "",
         "Title": "Faculty Award for Excellence in Teaching 2020 (Facultair Docent van het Jaar 2020)",
