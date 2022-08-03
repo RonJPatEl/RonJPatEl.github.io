@@ -23,7 +23,7 @@
       "End": "present",
       "Title": "Innovating digital assessment: Effective use of multimedia",
       "Funder": "Open University: Call for Interdisciplinary Research",
-      "Role": "Co-investigator",
+      "Role": "Copromotor",
       "Value": 250000,
       "url": "https://www.ou.nl/en/innovating-for-resilience-projects-innovating-digital-assessment"
     },
@@ -35,6 +35,15 @@
       "Role": "Co-investigator",
       "Value": 199150,
       "url": "https://www.ou.nl/en/-/gamebrics-tijdens-de-gameplay-feedback-krijgen-over-je-vaardigheden"
+    },
+    {
+      "Start": 2022,
+      "End": "present",
+      "Title": "Designer wizard for Serious Games for computational thinking in higher education",
+      "Funder": "Open University: Call for Interdisciplinary Research",
+      "Role": "Copromotor",
+      "Value": 250000,
+      "url": ""
     }
   ]
 }
