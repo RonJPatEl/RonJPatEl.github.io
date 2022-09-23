@@ -1,6 +1,15 @@
 {
   "grants": [
     {
+      "Start": "2020",
+      "End": "2021",
+      "Title": "Teaching and research grant: Best teacher Open University 2021",
+      "Funder": "Open Universiteit",
+      "Role": "Teacher",
+      "Value": 3000,
+      "url": "https://www.ou.nl/en/-/ron-pat-el-ou-docent-van-het-jaar-2021"
+    },
+    {
       "Start": "2019",
       "End": "present",
       "Title": "Serious Game - Junior Scientist",
