@@ -18,8 +18,8 @@ AiO-subsidie                                       | ja          |
 management	                                       | ja          |
 promovendi klaar                                   | nee         |
 promovendi publicaties                             | nee         |
-twee publicaties per jaar, 50% first/second/last   | nee         |
-totaal minimaal 20 publicaties                     | nee         |
+twee publicaties per jaar, 50% first/second/last   | ja         |
+totaal minimaal 20 publicaties                     | ja         |
 Erkende internationale expertise*                  | nee         |
 
 
